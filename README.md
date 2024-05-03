@@ -1,30 +1,33 @@
-# React + TypeScript + Vite
+# Axa Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is made for completing my test at AXA.
 
-Currently, two official plugins are available:
+Techs used in this project:
+- Typescript
+- React
+- React Query
+- Material UI
+- Vitest
+- Etc.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Viewing the web app at production server
 
-## Expanding the ESLint configuration
+You can view the web app without starting development server through following link [https://wideka-axa.vercel.app](https://wideka-axa.vercel.app)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Starting local development server
 
-- Configure the top-level `parserOptions` property like this:
+To start local development server, follow these steps:
+1. Clone project
+    ```
+    git clone https://github.com/widekaardhiguna/axa-project.git
+    ```
+2. Install dependency by this command
+    ```
+    npm install
+    ```
+3. Start local app
+    ```
+    npm run dev
+    ```
+4. The app will now run at http://localhost:5173 
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
