@@ -11,7 +11,7 @@ export const UserAlbumListPage = () => {
   const { onClickAlbumDetail } = useUserAlbumList()
   return (
     <>
-      <Typography variant="h2" textAlign="center">
+      <Typography variant="h4" component="h2" align="center" mb={3}>
         Photo Albums
       </Typography>
       <AlbumList albums={data} onClickAlbumDetail={onClickAlbumDetail} />
