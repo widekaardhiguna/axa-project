@@ -61,8 +61,8 @@ export const UserPostListPage = () => {
         bottom={
           <PostList
             posts={dataPostList}
-            company={dataDetailUser?.name}
-            name={dataDetailUser?.company.name}
+            company={dataDetailUser?.company.name}
+            name={dataDetailUser?.name}
             onClickPostDetail={onClickPostDetail}
           />
         }
